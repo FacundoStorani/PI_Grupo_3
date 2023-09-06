@@ -1,0 +1,115 @@
+.body {
+    background-color: rgb(12, 10, 10);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* css home */
+
+.main_home {
+    width: 90%;
+}
+
+.logo_home {
+    display: flex;
+    justify-content: flex-start;
+}
+.img_logo {
+    width: 100px;
+
+}
+
+.h_dos_home{
+    color: aliceblue;
+}
+.divhome {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.hpeliculas {
+    margin-top: 0%;
+}
+
+.sectionHome {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    background-color: rgb(4, 4, 23);
+}
+.Pelicula {
+    margin-bottom: 9px;
+}
+
+.h-tres-home{
+   display: flex;
+   justify-content: center;
+    color: rgb(213, 194, 194);
+    font-size: 15px;
+
+}
+
+
+.aHome{
+    text-decoration: none;
+}
+
+.imgHome {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10%;
+    height: 290px;
+}
+.ArtHome {
+   
+    background-color: rgb(18, 18, 33);
+    width: 220px;
+    margin: 10px;
+    border-radius: 10%;
+    height: 350px;
+   
+}
+
+
+
+
+/* Genero */
+
+
+
+
+
+/* Favoritos */
+
+
+
+
+
+/* detallesSeries */
+
+
+
+
+
+/* detallesPeliculas */
+
+
+
+
+
+/* DetallesGenero */
+
+
+
+
+
+
+/* Busqueda */
+
