@@ -4,24 +4,44 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+ 
+.header {
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.buscador {
+    display: flex;
+    align-self: center;
+    margin-left: 170px;
+    padding-left: 190px;
+}
+
+.nav_lista {
+    margin-left: 200px;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.img_logo {
+    width: 100px;
+    margin-right: 20px;
+
+}
 
 /* css home */
-.header {
-    background-attachment: fixed;
-}
+
+
 
 .main_home {
     width: 90%;
-}
-
-.logo_home {
-    display: flex;
-    justify-content: flex-start;
-}
-.img_logo {
-    width: 100px;
-
 }
 
 .h_dos_home{
@@ -46,8 +66,13 @@
     justify-content: center;
     width: 90%;
     background-color: rgb(4, 4, 23);
+    position: relative;
+    left: 150px;
 }
 .Pelicula {
+    margin-bottom: 9px;
+}
+.Serie {
     margin-bottom: 9px;
 }
 
@@ -84,6 +109,25 @@
 
 
 /* Genero */
+
+.sect1_Genero{
+    background-image: url(../Img/Pelicula_2.jpeg);
+}  
+
+.botones_genero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 700px;
+    background-color: rgb(4, 4, 23);
+}
+.art_genero{
+    margin-right: 9px;
+    color:rgb(35, 32, 32);
+    width: 100px;
+    height: 45px;
+}
 
 
 
