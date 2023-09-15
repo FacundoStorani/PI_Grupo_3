@@ -353,6 +353,27 @@ header nav a {
     left: 140px;
 }
 
+/*Footer*/
+.sectionfooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 81%;
+    position: relative;
+    left: 150px;
+}
+
+.articlefooter {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pfooter{
+    margin-right: 200px;
+}
 
 
 /* media queris*/
@@ -426,6 +447,97 @@ header nav a {
         right: 60px;
     }
 
+    /*DETALLESERIE*/
+
+    .img_logo {
+        width: 100px;
+        margin-right: -220px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+    .header_all{
+        position: relative;
+        right: 280px;
+        width: 200px;
+    }
+    .sectionHome{
+        position: relative;
+        right: 300px;
+    }
+    .nav_lista {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        left: 25px;
+    }
+    .buscador {
+        position: relative;
+        right: 70px;
+        margin-bottom: 10px;
+    }
+    .logo_header {
+        position: relative;
+        left: 180px;
+    }
+    .sectionbreaking {
+        background-image: url(../IMG/fondo.jpg);
+        width: 75%;
+        height: 400px;
+        display: flex;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(0, 115, 164);
+        margin: auto;
+    }
+    .articlebreaking {
+        align-self: center;
+        padding: 7px;
+    }
+    .fondodetalle {
+        height: 220px;
+        width: 180px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(0, 115, 164);
+        position: relative;
+        left: 50px;
+    }
+    .sectiondos {
+        width: 75%;
+        height: 380px;
+        display: flex;
+        background-color: rgba(67, 120, 255, 0.469);
+        margin: auto;
+    }
+    .h3breaking {
+        color: black;
+        padding-top: 360px;
+        font-size: 10px;
+        margin-left: -220px;
+    }
+    .h1breaking {
+        padding-top: 300px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        margin-left: -140px;
+    }
+
+    /*Footer*/
+    
+    .pfooter{
+        margin-right: 30px;
+    }
+
+    .articlefooter {
+        color: gray;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 110px;
+    } 
 
 
 
