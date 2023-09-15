@@ -68,14 +68,12 @@ header nav a {
     width: 90%;
     background-color: rgb(4, 4, 23);
     position: relative;
-    left: 150px;
+    left: 75px;
 }
 .Pelicula {
     margin-bottom: 9px;
 }
-.Serie {
-    margin-bottom: 9px;
-}
+
 
 .h-tres-home{
    display: flex;
@@ -105,9 +103,13 @@ header nav a {
     height: 350px; 
 }
 
+
+
+
+
 /* Genero */
 
-.sect1_Genero{
+.sect1_Genero {
     background-image: url(../Img/Pelicula_2.jpeg);
 }  
 
@@ -142,6 +144,7 @@ header nav a {
     width: 75%;
     height: 550px;
     display: flex;
+    flex-wrap: wrap;
     border-width: 3px;
     border-style: solid;
     border-color: rgb(0, 115, 164);
@@ -166,15 +169,19 @@ header nav a {
 
 .sectiondos{
     width: 75%;
-    height: 180px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgba(67, 120, 255, 0.469);
     margin: auto;
     
 }
 
 .Pbreaking {
-    color: white;   
+    color: white;  
+    margin-left: 9px;
+    margin-right: 5px; 
+    
 }
 
 .h1breaking {
@@ -201,11 +208,11 @@ header nav a {
     color: white;
     display: flex;
     background-color: rgba(67, 120, 255, 0.469);
-    margin: auto;
-    width: 225px;
-    border-radius: 2%;
-    margin-top: 5px;
+    width: 120px;
+
 }
+
+
 
 
 
@@ -218,7 +225,10 @@ header nav a {
 
 
 /* DetallesGenero */
-
+.p_detalle_G{
+    color: white;
+    width: 90%;
+}
 
 
 
@@ -226,3 +236,97 @@ header nav a {
 
 /* Busqueda */
 
+.title_Series {
+    width: 100%;
+    text-align: center;
+}
+.sectionBusqueda{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    background-color: rgb(4, 4, 23);
+    position: relative;
+    left: 140px;
+}
+
+
+
+/* media queris*/
+
+@media(max-width:420px){
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+    .header_all{
+        position: relative;
+        right: 280px;
+        width: 200px;
+    }
+    .sectionHome{
+        position: relative;
+        right: 300px;
+    }
+    .nav_lista {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        left: 25px;
+    }
+    .buscador {
+        position: relative;
+        right: 70px;
+        margin-bottom: 10px;
+    }
+    .logo_header {
+        position: relative;
+        left: 120px;
+    }
+
+
+    .main_home{
+        position: relative;
+        right: 130px;
+    }
+
+
+    /* Favoritos */
+    .logo_favoritos {
+        position: relative;
+        left: 120px;
+    }
+    .Pelicula{
+        position: relative;
+        left: 150px;
+    }
+
+    /* busqueda */
+
+    .logo_busqueda{
+        position: relative;
+        left: 120px;
+    }
+    .sectionBusqueda{
+        position: relative;
+        left: 165px;
+    }
+    /*Detalle Genero */
+    .logoDG{
+        position: relative;
+        left: 110px;
+    }
+    .mainDG{
+        position: relative;
+        right: 60px;
+    }
+
+
+
+
+
+}
