@@ -6,9 +6,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Css/Style.css">
 </head>
-<body>
-    
+<body class="body">
 
+    <header class="header_all">
+
+        <div class=" header">
+    
+            <img class="img_logo" src="./Img/Logo.2.png" alt="logo.header">
+    
+            <div class="buscador">
+                <form action="../Busqueda.html" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="Buscar...">
+                    <input type="submit" value="Buscar" class="buscar">
+                </form>
+            </div>
+    
+            <nav class="nav_lista">
+                <a href="./Home.html" class="activo">Home</a>
+                <a href="./Genero.html" target="_blank">Generos</a>
+                <a href="./Busqueda.html">Películas</a>
+                <a href="./Favoritos.html" target="_blank">Favoritos</a>				
+            </nav>
+    
+        </div>
+    
+    </header>
+
+    <section class="sectionbreaking">
+        <article class="articlebreaking">
+           <img class="fondodetalle" src="./Img/Avatar.jpg" alt="pelicula_Avatar">
+        </article>
+        <h1 class="h1">Avatar</h1>
+        <h3 class="h3">Pelicula ganadora de multiples premios <br>incluyendo oscar a los mejores efectos visuales</h3>
+        <a class="vertrailer" href="https://youtu.be/AZS_d_hS2dM?feature=shared" target="_blank" rel="noopener noreferrer">Ver Trailer</a>
+    </section>
+    <section class="sectiondos">
+        <p class="parrafo1">Valoracion: 7.9 <br> <br>Duracion: 162 minutos <br> <br> Generos: Accion - Adventure - Fantasy - Sci-Fi <br> <br>Entramos en el mundo Avatar de la mano de Jake Sully, un ex-Marine en silla de ruedas, que ha sido reclutado para viajar a Pandora, donde <br>existe un mineral raro y muy preciado que puede solucionar la crisis energética existente en la Tierra.</p>
+        <button class="favoritos">Añadir a favoritos</button>
+    </section>
     <footer>
         <section class="sectionfooter">
             <article class="articlefooter">
@@ -18,5 +53,6 @@
             </article>
         </section>
     </footer>
+    
 </body>
 </html>
