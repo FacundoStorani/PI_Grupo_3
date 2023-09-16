@@ -350,7 +350,7 @@ header nav a {
 
 .sectiondos{
     width: 75%;
-    height: 170px;
+    height: 250px;
     display: flex;
     background-color: rgb(0, 24, 84);
     margin: auto;
@@ -751,4 +751,4 @@ font-size: 50px;
     }
 }
 
-}
+
