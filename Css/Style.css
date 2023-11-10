@@ -39,8 +39,6 @@ header nav a {
 
 /* css home */
 
-
-
 .main_home {
     width: 90%;
 }
@@ -68,14 +66,12 @@ header nav a {
     width: 90%;
     background-color: rgb(4, 4, 23);
     position: relative;
-    left: 150px;
+    left: 75px;
 }
 .Pelicula {
     margin-bottom: 9px;
 }
-.Serie {
-    margin-bottom: 9px;
-}
+
 
 .h-tres-home{
    display: flex;
@@ -102,13 +98,8 @@ header nav a {
     width: 220px;
     margin: 10px;
     border-radius: 10%;
-    height: 350px;
-   
+    height: 350px; 
 }
-
-
-
-
 /* Genero */
 
 .fondogenero{
@@ -126,8 +117,6 @@ font-size: 50px;
 .h2peliculasgenero{
     color: white;
 }
-
-
 
 .sect1_Genero{
     background-image: url(../Img/Pelicula_2.jpeg);
@@ -153,58 +142,7 @@ font-size: 50px;
     background-color: rgb(4, 4, 23);
   
 }
-.buttonaccion{
-    margin-left: 22px;
-    margin-top: 12px;
-}
 
-.buttonaventura{
-    margin-top: 12px;
-    margin-left: 18px;
-}
-
-.buttoncomedia{
-    margin-top: 12px;
-    margin-left: 15px;
-}
-.buttonanimacion{
-    margin-top: 12px;
-    margin-left: 10px;
-}
-
-.buttoncf{
-    
-    margin-top: 4px;
-}
-.buttonmisterio{
-    margin-left: 17px;
-    margin-top: 12px;
-}
-
-.buttonaya{
-    margin-top: 4px;
-}
-.buttondrama{
-    margin-left: 22px;
-    margin-top: 12px;
-}
-
-.buttonhistoria{
-    margin-left: 20px;
-    margin-top: 12px;
-}
-.buttoncrimen{
-    margin-left: 21px;
-    margin-top: 12px;
-}
-.buttonbelica{
-    margin-left: 22px;
-    margin-top: 12px;
-}
-.buttonromance{
-    margin-left: 14px;
-    margin-top: 12px;
-}
 .buttona1{
     background: transparent;
     border: 0px;
@@ -215,92 +153,58 @@ font-size: 50px;
     background: #e4e4e4;
 }
 
-@media(max-width:390px){
-    .header{
-        display: flex;
-        flex-direction: column;
-        padding-right: 180px;
-    }
-    .header_all{
-        position: relative;
-        right: 280px;
-        width: 200px;
-    }
-    .sectionHome{
-        position: relative;
-        right: 300px;
-    }
-    .nav_lista {
-        display: flex;
-        margin-bottom: 10px;
-        position: relative;
-        left: 25px;
-    }
-    .buscador {
-        position: relative;
-        right: 50px;
-        margin-bottom: 10px;
-    }
-    .logo_header {
-        position: relative;
-        left: 120px;
-    }
-    .img_logo{
-        position: relative;
-        left: 140px;
-    }
-    .fondogenero{
-        background-image: url(../Img/generofondo.jpeg);
-        background-position: -100px -50px;
-        height: 225px;
-        width: 100%;
-        /* margin-left: 350px;*/
-        border: solid 2px black;
-    }
-    .generosh1{
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-    }
-    .h2peliculasgenero{
-        color: white;
-    }
-    .botones_genero{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color:  rgb(4, 4, 23);
-        margin-bottom: 50px;
-    }
-    .art_genero{
-        margin-right: 0px;
-        color:rgb(35, 32, 32);
-        width: 80%;
-        height: 45px;
-        text-align: center;
-        background-color: rgb(4, 4, 23);
-    }
-    .a3{
-        width: 100px;
-        padding: 10px;
-        background: #e4e4e4;
-        
-    }
-    .buttona1{
-        background: transparent;
-        border: 0px;
-    }
+
+.sect1_Genero {
+    background-image: url(../Img/Pelicula_2.jpeg);
+    margin-bottom: 90px;
+}  
+
+.botones_genero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    background-color:  rgb(4, 4, 23);
+    margin-bottom: 50px;
 }
+.art_genero{
+    
+    margin-right: 9px;
+    color:rgb(35, 32, 32);
+    width: 100px;
+    height: 45px;
+    background-color: rgb(4, 4, 23);
+  
+}
+
+.buttona1{
+    background: transparent;
+    border: 0px;
+}
+.a3{
+    width: 100px;
+    padding: 12px;
+    background: #e4e4e4;
+}
+
+
 
 
 
 /* Favoritos */
 
-
-
+.sectionHome_favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    background-color: rgb(4, 4, 23);
+    position: relative;
+    left: 75px;
+}
 
 
 /* detallesSeries */
@@ -309,11 +213,11 @@ font-size: 50px;
     width: 75%;
     height: 550px;
     display: flex;
+    flex-wrap: wrap;
     border-width: 3px;
     border-style: solid;
     border-color: rgb(0, 115, 164);
     margin: auto;
-
 }
 
 .articlebreaking{
@@ -328,20 +232,23 @@ font-size: 50px;
     border-width: 3px;
     border-style: solid;
     border-color: rgb(0, 115, 164);
-    
 }
 
 .sectiondos{
     width: 75%;
-    height: 180px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgba(67, 120, 255, 0.469);
     margin: auto;
     
 }
 
 .Pbreaking {
-    color: white;   
+    color: white;  
+    margin-left: 9px;
+    margin-right: 5px; 
+    
 }
 
 .h1breaking {
@@ -368,15 +275,8 @@ font-size: 50px;
     color: white;
     display: flex;
     background-color: rgba(67, 120, 255, 0.469);
-    margin: auto;
-    width: 225px;
-    border-radius: 2%;
-    margin-top: 5px;
+    width: 120px;
 }
-
-
-
-
 
 /* detallesPeliculas */
 .sectionbreaking {
@@ -465,11 +365,389 @@ h3{
 
 
 /* DetallesGenero */
-
+.p_detalle_G{
+    color: white;
+    width: 90%;
+}
 
 
 
 
 
 /* Busqueda */
+
+.title_Series {
+    width: 100%;
+    text-align: center;
+}
+.sectionBusqueda{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    background-color: rgb(4, 4, 23);
+    position: relative;
+    left: 140px;
+}
+
+/*Footer*/
+.sectionfooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 81%;
+    position: relative;
+    left: 150px;
+}
+
+.articlefooter {
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pfooter{
+    margin-right: 200px;
+}
+
+
+/* media queris*/
+
+@media(max-width:420px){
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+    .header_all{
+        position: relative;
+        right: 280px;
+        width: 200px;
+    }
+    .sectionHome{
+        position: relative;
+        right: 300px;
+    }
+    .nav_lista {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        left: 25px;
+    }
+    .buscador {
+        position: relative;
+        right: 70px;
+        margin-bottom: 10px;
+    }
+    .logo_header {
+        position: relative;
+        left: 120px;
+    }
+
+
+    .main_home{
+        position: relative;
+        right: 130px;
+    }
+
+
+    /* Favoritos */
+    .logo_favoritos {
+        position: relative;
+        left: 120px;
+    }
+    .Pelicula{
+        position: relative;
+        left: 150px;
+    }
+
+    /* busqueda */
+
+    .logo_busqueda{
+        position: relative;
+        left: 120px;
+    }
+    .sectionBusqueda{
+        position: relative;
+        left: 165px;
+    }
+    /*Detalle Genero */
+    .logoDG{
+        position: relative;
+        left: 110px;
+    }
+    .mainDG{
+        position: relative;
+        right: 60px;
+    }
+
+    /*DETALLESERIE*/
+
+    .img_logo {
+        width: 100px;
+        margin-right: -220px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+    .header_all{
+        position: relative;
+        right: 280px;
+        width: 200px;
+    }
+    .sectionHome{
+        position: relative;
+        right: 300px;
+    }
+    .nav_lista {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        left: 25px;
+    }
+    .buscador {
+        position: relative;
+        right: 70px;
+        margin-bottom: 10px;
+    }
+    .logo_header {
+        position: relative;
+        left: 180px;
+    }
+    .sectionbreaking {
+        background-image: url(../IMG/fondo.jpg);
+        width: 75%;
+        height: 400px;
+        display: flex;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(0, 115, 164);
+        margin: auto;
+    }
+    .articlebreaking {
+        align-self: center;
+        padding: 7px;
+    }
+    .fondodetalle {
+        height: 220px;
+        width: 180px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(0, 115, 164);
+        position: relative;
+        left: 50px;
+    }
+    .sectiondos {
+        width: 75%;
+        height: 380px;
+        display: flex;
+        background-color: rgba(67, 120, 255, 0.469);
+        margin: auto;
+    }
+    .h3breaking {
+        color: black;
+        padding-top: 360px;
+        font-size: 10px;
+        margin-left: -220px;
+    }
+    .h1breaking {
+        padding-top: 300px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        margin-left: -140px;
+    }
+
+    /*Footer*/
+    
+    .pfooter{
+        margin-right: 30px;
+    }
+
+    .articlefooter {
+        color: gray;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 110px;
+    } 
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+    .header_all{
+        position: relative;
+        right: 280px;
+        width: 200px;
+    }
+    .sectionHome{
+        position: relative;
+        right: 300px;
+    }
+    .nav_lista {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        left: 25px;
+    }
+    .buscador {
+        position: relative;
+        right: 50px;
+        margin-bottom: 10px;
+    }
+    .logo_header {
+        position: relative;
+        left: 120px;
+    }
+    .img_logo{
+        position: relative;
+        left: 90px;
+    }
+    .fondogenero{
+        background-image: url(../Img/generofondo.jpeg);
+        background-position: -100px -50px;
+        height: 225px;
+        width: 100%;
+        /* margin-left: 350px;*/
+        border: solid 2px black;
+    }
+    .generosh1{
+        margin-top: 70px;
+        margin-left: 150px;
+        font-size: 50px;
+    }
+    .h2peliculasgenero{
+        color: white;
+    }
+    .botones_genero{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color:  rgb(4, 4, 23);
+        margin-bottom: 50px;
+    }
+    .art_genero{
+        margin-right: 0px;
+        color:rgb(35, 32, 32);
+        width: 80%;
+        height: 45px;
+        text-align: center;
+        background-color: rgb(4, 4, 23);
+    }
+    .a3{
+        width: 100px;
+        padding: 10px;
+        background: #e4e4e4;
+        
+    }
+    .buttona1{
+        background: transparent;
+        border: 0px;
+    }    
+    .img_logo {
+        width: 100px;
+        margin-right: -220px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+    .header_all{
+        position: relative;
+        right: 280px;
+        width: 200px;
+    }
+    .sectionHome{
+        position: relative;
+        right: 300px;
+    }
+    .nav_lista {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        left: 25px;
+    }
+    .buscador {
+        position: relative;
+        right: 70px;
+        margin-bottom: 10px;
+    }
+    .logo_header {
+        position: relative;
+        left: 180px;
+    }
+    .sectionbreaking {
+        background-image: url(../IMG/fondo.jpg);
+        width: 75%;
+        height: 400px;
+        display: flex;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(0, 115, 164);
+        margin: auto;
+    }
+    .articlebreaking {
+        align-self: center;
+        padding: 7px;
+    }
+    .fondodetalle {
+        height: 250px;
+        width: 180px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(0, 115, 164);
+        position: relative;
+        left: 50px;
+    }
+    .sectiondos {
+        width: 75%;
+        height: 380px;
+        display: flex;
+        background-color: rgba(67, 120, 255, 0.469);
+        margin: auto;
+    }
+    .h3breaking {
+        color: black;
+        padding-top: 360px;
+        font-size: 10px;
+        margin-left: -220px;
+    }
+    .h1breaking {
+        padding-top: 300px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        margin-left: -140px;
+    }
+
+    /*Footer*/
+    
+    .pfooter{
+        margin-right: 30px;
+    }
+
+    .articlefooter {
+        color: gray;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 110px;
+    }
+    
+
+
+
+
+}
 
