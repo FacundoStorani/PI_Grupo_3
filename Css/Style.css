@@ -39,8 +39,6 @@ header nav a {
 
 /* css home */
 
-
-
 .main_home {
     width: 90%;
 }
@@ -102,30 +100,93 @@ header nav a {
     border-radius: 10%;
     height: 350px; 
 }
-
-
-
-
-
 /* Genero */
 
-.sect1_Genero {
+.fondogenero{
+    background-image: url(../Img/generofondo.jpeg);
+    height: 225px;
+    border: solid 2px black;
+}
+
+.generosh1{
+margin-top: 125px;
+margin-left: 250px;
+font-size: 50px;
+}
+
+.h2peliculasgenero{
+    color: white;
+}
+
+.sect1_Genero{
     background-image: url(../Img/Pelicula_2.jpeg);
+    margin-bottom: 90px;
 }  
 
 .botones_genero{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    width: 700px;
-    background-color: rgb(4, 4, 23);
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    background-color:  rgb(4, 4, 23);
+    margin-bottom: 50px;
 }
 .art_genero{
+    
     margin-right: 9px;
     color:rgb(35, 32, 32);
     width: 100px;
     height: 45px;
+    background-color: rgb(4, 4, 23);
+  
+}
+
+.buttona1{
+    background: transparent;
+    border: 0px;
+}
+.a3{
+    width: 100px;
+    padding: 12px;
+    background: #e4e4e4;
+}
+
+
+.sect1_Genero {
+    background-image: url(../Img/Pelicula_2.jpeg);
+    margin-bottom: 90px;
+}  
+
+.botones_genero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    background-color:  rgb(4, 4, 23);
+    margin-bottom: 50px;
+}
+.art_genero{
+    
+    margin-right: 9px;
+    color:rgb(35, 32, 32);
+    width: 100px;
+    height: 45px;
+    background-color: rgb(4, 4, 23);
+  
+}
+
+.buttona1{
+    background: transparent;
+    border: 0px;
+}
+.a3{
+    width: 100px;
+    padding: 12px;
+    background: #e4e4e4;
 }
 
 
@@ -312,15 +373,74 @@ header nav a {
 
 }
 
+.articlebreaking{
+   align-self: center;
+   padding: 20px;
+   
+}
 
+.fondodetalle {
+    height: 500px;
+    width: 350px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 115, 164);
+    
+}
 
+.sectiondos{
+    width: 75%;
+    height: 170px;
+    display: flex;
+    background-color: rgb(0, 24, 84);
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 5px;
+}
 
+.parrafo1{
+    color: white;
+    margin: 5px;
+}
 
+.h1{
+    padding-top: 150px;
+    color: black;
+    font-size: 40px;
+}
 
+h3{
+    padding-top: 300px;
+    margin-left: -110px;
+    color: black;
+    font-size: 25px;
+}
 
+.sectionfavoritos{
+    width: 75%;
+    height: 70px;
+    display: flex;
+    background-color: rgb(0, 24, 84);
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 5px;
+}
 
+.vertrailer{
+   margin-top: 400px;
+   margin-left: -490px;
+    color: black;
+    font-size: 30px;
+}
 
-/* detallesPeliculas */
+.favoritos{
+    color: white;
+    display: flex;
+    background-color: rgb(0, 24, 84);
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 5px;
+}
 
 .sectionbreaking {
     background-image: url(../Img/fondo.jpg);
