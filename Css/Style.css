@@ -360,7 +360,141 @@ h3{
     margin-top: 5px;
 }
 
+.sectionbreaking {
+    background-image: url(../Img/fondo.jpg);
+    width: 75%;
+    height: 550px;
+    display: flex;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 115, 164);
+    margin: auto;
 
+}
+
+.articlebreaking{
+   align-self: center;
+   padding: 20px;
+   
+}
+
+.fondodetalle {
+    height: 500px;
+    width: 350px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 115, 164);
+    
+}
+
+.sectiondos{
+    width: 75%;
+    height: 250px;
+    display: flex;
+    background-color: rgb(0, 24, 84);
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 5px;
+}
+
+.parrafo1{
+    color: white;
+    margin: 5px;
+}
+
+.h1{
+    padding-top: 150px;
+    color: black;
+    font-size: 40px;
+}
+
+h3{
+    padding-top: 300px;
+    margin-left: -110px;
+    color: black;
+    font-size: 25px;
+}
+
+.sectionfavoritos{
+    width: 75%;
+    height: 70px;
+    display: flex;
+    background-color: rgb(0, 24, 84);
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 5px;
+}
+
+.vertrailer{
+   margin-top: 400px;
+   margin-left: -490px;
+    color: black;
+    font-size: 30px;
+}
+
+.favoritos{
+    color: white;
+    display: flex;
+    background-color: rgb(0, 24, 84);
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 5px;
+}
+
+/* Genero */
+
+.fondogenero{
+    background-image: url(../Img/fondo_genero.jpeg);
+    height: 225px;
+    border: solid 2px black;
+}
+
+.generosh1{
+margin-top: 125px;
+margin-left: 250px;
+font-size: 50px;
+}
+
+.h2peliculasgenero{
+    color: white;
+}
+
+
+
+.sect1_Genero{
+    background-image: url(../Img/Pelicula_2.jpeg);
+    margin-bottom: 90px;
+}  
+
+.botones_genero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    background-color:  rgb(4, 4, 23);
+    margin-bottom: 50px;
+}
+.art_genero{
+    
+    margin-right: 9px;
+    color:rgb(35, 32, 32);
+    width: 100px;
+    height: 45px;
+    background-color: rgb(4, 4, 23);
+  
+}
+
+.buttona1{
+    background: transparent;
+    border: 0px;
+}
+.a3{
+    width: 100px;
+    padding: 12px;
+    background: #e4e4e4;
+}
 
 
 
@@ -577,7 +711,6 @@ h3{
         position: relative;
         right: 110px;
     } 
-    
     .header{
         display: flex;
         flex-direction: column;
@@ -609,7 +742,7 @@ h3{
     }
     .img_logo{
         position: relative;
-        left: 90px;
+        left: 140px;
     }
     .fondogenero{
         background-image: url(../Img/generofondo.jpeg);
@@ -654,100 +787,7 @@ h3{
     .buttona1{
         background: transparent;
         border: 0px;
-    }    
-    .img_logo {
-        width: 100px;
-        margin-right: -220px;
     }
-    .header{
-        display: flex;
-        flex-direction: column;
-        padding-right: 180px;
-    }
-    .header_all{
-        position: relative;
-        right: 280px;
-        width: 200px;
-    }
-    .sectionHome{
-        position: relative;
-        right: 300px;
-    }
-    .nav_lista {
-        display: flex;
-        margin-bottom: 10px;
-        position: relative;
-        left: 25px;
-    }
-    .buscador {
-        position: relative;
-        right: 70px;
-        margin-bottom: 10px;
-    }
-    .logo_header {
-        position: relative;
-        left: 180px;
-    }
-    .sectionbreaking {
-        background-image: url(../IMG/fondo.jpg);
-        width: 75%;
-        height: 400px;
-        display: flex;
-        border-width: 3px;
-        border-style: solid;
-        border-color: rgb(0, 115, 164);
-        margin: auto;
-    }
-    .articlebreaking {
-        align-self: center;
-        padding: 7px;
-    }
-    .fondodetalle {
-        height: 250px;
-        width: 180px;
-        border-width: 3px;
-        border-style: solid;
-        border-color: rgb(0, 115, 164);
-        position: relative;
-        left: 50px;
-    }
-    .sectiondos {
-        width: 75%;
-        height: 380px;
-        display: flex;
-        background-color: rgba(67, 120, 255, 0.469);
-        margin: auto;
-    }
-    .h3breaking {
-        color: black;
-        padding-top: 360px;
-        font-size: 10px;
-        margin-left: -220px;
-    }
-    .h1breaking {
-        padding-top: 300px;
-        color: rgb(0, 0, 0);
-        font-size: 30px;
-        margin-left: -140px;
-    }
-
-    /*Footer*/
-    
-    .pfooter{
-        margin-right: 30px;
-    }
-
-    .articlefooter {
-        color: gray;
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        right: 110px;
-    }
-    
-
-
-
-
 }
+
 
