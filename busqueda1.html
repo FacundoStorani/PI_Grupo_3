@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Css/Style.css">
 </head>
-<body class="body">
-
-
+<body>
     <header class="header_all">
 
 		<div class=" header">
 
-			<a class="logo_header" href="./Home.html"><img class="img_logo" src="./Img/Logo.2.png" alt="logo.header"></a>
+			<a href="./Home.html"><img class="img_logo logo_busqueda" src="./Img/Logo.2.png" alt="logo.header"></a>
 
-			<div class="buscador">
+			<div class="buscador buscador_busqueda">
 				<form action="./Busqueda.html" method="get" target="_blank">
-					<input type="text" name="q" placeholder="Buscar...">
+					<input id="inputBusqueda" type="text" name="q" placeholder="Buscar...">
 					<input type="submit" value="Buscar" class="buscar">
 				</form>
 			</div>
@@ -33,40 +30,11 @@
 
 	</header>
 
-    
-
-    <main class="main_home">
-
-
-
-        <section class="sectionHome Pelicula">
-
-            <div><h2 class="h_dos_home"> Películas más valoradas </h2></div>
-
-            <div class="divhomePeliculasValo">           
-            </div>
-      
-        </section>
-
-        <section class="sectionHome Pelicula">
-
-            <h2 class="h_dos_home"> Las Cinco series más populares</h2>
-
-            <div class="divhomeSeries">
-            </div>
-            
-        </section>
-
-        <section class="sectionHome Pelicula">
-
-            <div><h2 class="h_dos_home"> Para ver en Familia </h2></div>
-
-            <div class="divhomePel">
-            </div>
-
-        </section>
+    <main>
+        <h2 id="resultadoBusqueda">Resultados de búsqueda para: </h2>
 
     </main>
+
 
     <footer>
         <section class="sectionfooter">
@@ -80,6 +48,6 @@
         
         </section>
     </footer>
-    <script src="./Js/home.js"></script>
+    <script src="./Js/busqueda.js"></script>
 </body>
 </html>
