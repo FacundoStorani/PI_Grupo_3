@@ -46,7 +46,21 @@ header nav a {
 .h_dos_home{
     color: aliceblue;
 }
-.divhome {
+.divhomePeliculasValo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.divhomeSeries{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.divhomePel{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

@@ -4,7 +4,7 @@ let movieData = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}
 
 /* Caputando elementos del DOM */
 
-let listaPeliculas = document.querySelector(".divhomePeliculas");
+let listaPeliculas = document.querySelector(".divhomePeliculasValo");
 
 console.log(listaPeliculas);
 
@@ -22,6 +22,7 @@ fetch(movieData)
                                         <article class="ArtHome"> 
                                         <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}"Breaking Bad">   
                                         <p>${data.results[index].title}</p>
+                                        <p>${data.results[index].release_date}</p>
                                         </article>
                                     </a>`   
     }
@@ -38,7 +39,7 @@ fetch(movieData)
 /* Peliculas Populares */
 
 let peliculaPopular = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
-let listaPopulares = document.querySelector(".divhome");
+let listaPopulares = document.querySelector(".divhomePel");
 console.log(listaPopulares);
 
 fetch(peliculaPopular)
@@ -50,10 +51,11 @@ fetch(peliculaPopular)
     console.log(data.results);
     for (let index = 0; index < 5 ; index++) {
         listaPopulares.innerHTML += `
-                                      <a class="aHome" href="./detallePelicula.html" > 
+                                      <a class="aHome" href="./> 
                                          <article class="ArtHome"> 
                                            <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="Spiderman">  
                                            <p>${data.results[index].title}</p> 
+                                           <p>${data.results[index].release_date}</p>
                                          </article>
                                       </a>`   
     }
@@ -68,7 +70,7 @@ fetch(peliculaPopular)
 /* series tv*/
 
 let serieTV = `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}`;
-let listaSerieTV = document.querySelector(".divhome");
+let listaSerieTV = document.querySelector(".divhomeSeries");
 console.log(listaSerieTV);
 
 fetch(serieTV)
@@ -82,7 +84,9 @@ fetch(serieTV)
         listaSerieTV.innerHTML += `
                                    <a class="aHome" href="./detallePelicula.html" >
                                        <article class="ArtHome"> 
-                                           <img class="imgHome" src="./Img/Casino.jpg" alt="Casino">
+                                           <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="Casino">
+                                           <p>${data.results[index].title}</p> 
+                                           <p>${data.results[index].release_date}</p>
                                        </article>
                                    </a>`   
     }
