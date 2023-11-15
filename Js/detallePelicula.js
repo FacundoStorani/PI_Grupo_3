@@ -1,0 +1,80 @@
+let API_KEY          =  "8b6eae301b66732ee0ec9cb7d499ade8"
+let as               = location.search;
+let obas             = new URLSearchParams(as);
+let id               = obas.get("id");
+let detallePelicula  = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
+
+let portadaPel      = document.querySelector("#imgPortadaPel");
+let tituloPel       = document.querySelector("#h1Titulo");
+let fechaEstrenoPel = document.querySelector("#fechadeEstreno");
+let sinopsisPel     = document.querySelector("#sinopsisPel");
+let duracion        = document.querySelector("#duracionPel");
+let calificacion    = document.querySelector("#calificacionPel"); 
+let generos         = document.querySelector("#generoPel");
+
+let peliculasDetalle = document.querySelector(".sectionbreaking");
+console.log(peliculasDetalle);
+
+fetch(detallePelicula)
+
+.then(function(response) {
+    return response.json();
+})
+.then(function(data) {
+    console.log(data);
+    let detallePelis = "";
+    for (let index = 0; index < data.genres.length; index++) {
+        detallePelis += `${data.genres[index].name}`
+    }
+
+    portadaPel.src            = `https://image.tmdb.org/t/p/w500/${data.poster_path}`
+    tituloPel.innerText       = data.original_title;
+    fechaEstrenoPel.innerText = "Estreno: " + data.release_date;
+    sinopsisPel.innerText     = "Sinopsis: " + data.overview;     
+    duracion.innerText        = "Duracion:" + " " + data.runtime;
+    calificacion.innerText    = "Calificacion: " + data.vote_average
+    generos.innerText         = "Generos: " + data.genre_ids;
+
+    return data; 
+})
+
+.catch(function(errors) {
+    console.log(errors);
+    return errors;
+})
+
+/*boton recomendados*/
+
+let contenedor = document.querySelector("#contenedor");
+let buton      = document.querySelector("#botonReco");
+let recomendar = docuemnt.querySelector("#recomendacion");
+
+
+buton.addEventListener(`click`, function (e){
+        let hola = `https://api.themoviedb.org/3/movie/${id}/reccomendations?api_key=${API_KEY}`;
+        console.log(hola)
+
+        fetch(hola)
+            .then(function (response){
+                 return response.json()
+            })
+            .then(function(data) {
+                console.log(data);
+                contenedor.style.display = "block";
+                let info = "";
+                for (let index = 0; index < array.length; index++) {
+                    info += `<img class="imgRecom" src"https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt=""
+                          <h3 id = "h3detallePel">${data.results[index].title}</h3>`
+                               
+            }
+            recomendar.innerHTML = info;
+            })
+
+    .catch(function(error){
+        console.log(error);
+    })
+})
+
+
+
+

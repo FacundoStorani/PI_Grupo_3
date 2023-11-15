@@ -3,6 +3,7 @@ let API_KEY = "8b6eae301b66732ee0ec9cb7d499ade8"
 let movieData = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`;
 
 /* Caputando elementos del DOM */
+/*peliculas Mas valoradas*/
 
 let listaPeliculas = document.querySelector(".divhomePeliculasValo");
 
@@ -18,7 +19,7 @@ fetch(movieData)
     let contenido = "";
     for (let index = 0; index < 5 ; index++) {
         contenido += `
-                                    <a class="aHome" href="./detalleSerie.html" > 
+                                    <a class="aHome" href="./detallePelicula.html?id=${data.results[index].id}" > 
                                         <article class="ArtHome"> 
                                         <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}"Breaking Bad">   
                                         <p>${data.results[index].title}</p>
@@ -36,38 +37,8 @@ fetch(movieData)
     return errors;
 })
 
-/* Peliculas Populares */
 
-let peliculaPopular = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
-let listaPopulares = document.querySelector(".divhomePel");
-console.log(listaPopulares);
-
-fetch(peliculaPopular)
-
-.then(function(response) {
-    return response.json();
-})
-.then(function(data) {
-    console.log(data.results);
-    for (let index = 0; index < 5 ; index++) {
-        listaPopulares.innerHTML += `
-                                      <a class="aHome" href="./> 
-                                         <article class="ArtHome"> 
-                                           <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="Spiderman">  
-                                           <p>${data.results[index].title}</p> 
-                                           <p>${data.results[index].release_date}</p>
-                                         </article>
-                                      </a>`   
-    }
-
-    return data; 
-})
-.catch(function(errors) {
-    console.log(errors);
-    return errors;
-})
-
-/* series tv*/
+/* Las 5 series mas populares */
 
 let serieTV = `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}`;
 let listaSerieTV = document.querySelector(".divhomeSeries");
@@ -82,13 +53,44 @@ fetch(serieTV)
     console.log(data.results);
     for (let index = 0; index < 5 ; index++) {
         listaSerieTV.innerHTML += `
-                                   <a class="aHome" href="./detallePelicula.html" >
+                                   <a class="aHome" href="./detalleSerie.html" >
                                        <article class="ArtHome"> 
                                            <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="Casino">
-                                           <p>${data.results[index].title}</p> 
-                                           <p>${data.results[index].release_date}</p>
+                                           <p>${data.results[index].original_name
+}</p> 
+                                           <p>${data.results[index].first_air_date}</p>
                                        </article>
                                    </a>`   
+    }
+
+    return data; 
+})
+.catch(function(errors) {
+    console.log(errors);
+    return errors;
+})
+/* Para ver en familia */
+
+let peliculaPopular = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
+let listaPopulares = document.querySelector(".divhomePel");
+console.log(listaPopulares);
+
+fetch(peliculaPopular)
+
+.then(function(response) {
+    return response.json();
+})
+.then(function(data) {
+    console.log(data.results);
+    for (let index = 0; index < 5 ; index++) {
+        listaPopulares.innerHTML += `
+                                      <a class="aHome" href="./detallePelicula.html"> 
+                                         <article class="ArtHome"> 
+                                           <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="Spiderman">  
+                                           <p>${data.results[index].title}</p> 
+                                           <p>${data.results[index].release_date}</p>
+                                         </article>
+                                      </a>`   
     }
 
     return data; 
