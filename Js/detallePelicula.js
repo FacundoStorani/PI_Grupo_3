@@ -33,7 +33,7 @@ fetch(detallePelicula)
     sinopsisPel.innerText     = "Sinopsis: " + data.overview;     
     duracion.innerText        = "Duracion:" + " " + data.runtime;
     calificacion.innerText    = "Calificacion: " + data.vote_average
-    generos.innerText         = "Generos: " + data.genre_ids;
+    generos.innerText         = "Generos: " + detallePelis;
 
     return data; 
 })
@@ -47,11 +47,11 @@ fetch(detallePelicula)
 
 let contenedor = document.querySelector("#contenedor");
 let buton      = document.querySelector("#botonReco");
-let recomendar = docuemnt.querySelector("#recomendacion");
+let recomendar = document.querySelector("#recomendacion");
 
 
 buton.addEventListener(`click`, function (e){
-        let hola = `https://api.themoviedb.org/3/movie/${id}/reccomendations?api_key=${API_KEY}`;
+        let hola = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}`;
         console.log(hola)
 
         fetch(hola)
@@ -62,9 +62,11 @@ buton.addEventListener(`click`, function (e){
                 console.log(data);
                 contenedor.style.display = "block";
                 let info = "";
-                for (let index = 0; index < array.length; index++) {
-                    info += `<img class="imgRecom" src"https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt=""
-                          <h3 id = "h3detallePel">${data.results[index].title}</h3>`
+                for (let index = 0; index < 5; index++) {
+                    info += `<a class = "" href = "./detallePelicula.html?id=${data.results[index].id}">
+                                <img id="imgPortadaPel" class="fondodetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="portada pelicula"
+                                <h3 id = "h3detallePel">${data.results[index].title}</h3>
+                                </a>`
                                
             }
             recomendar.innerHTML = info;
