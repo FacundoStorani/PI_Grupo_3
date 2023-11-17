@@ -2,8 +2,8 @@ let API_KEY          =  "8b6eae301b66732ee0ec9cb7d499ade8"
 let as               = location.search;
 let obas             = new URLSearchParams(as);
 let id               = obas.get("id");
-let detalleSerie     = `https://api.themoviedb.org/3/tv/${id}?api_key=${API_KEY}`
-
+let detalleSerie     = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=${API_KEY}`
+let recomendaciones  =  `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=${API_KEY}`;
 let portadaSerie         = document.querySelector("#imgPortadaSerie");
 let tituloSerie          = document.querySelector("#h1TituloSer");
 let fechaEstrenoSerie    = document.querySelector("#fechadeEstrenoSer");
@@ -55,7 +55,7 @@ buton.addEventListener(`click`, function (e){
         let hola = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}`;
         console.log(hola)
 
-        fetch(hola)
+        fetch(recomendaciones)
             .then(function (response){
                  return response.json()
             })

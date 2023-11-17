@@ -3,7 +3,7 @@ let as               = location.search;
 let obas             = new URLSearchParams(as);
 let id               = obas.get("id");
 let detallePelicula  = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
-
+let recomendaciones  =  `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}`;
 let portadaPel      = document.querySelector("#imgPortadaPel");
 let tituloPel       = document.querySelector("#h1Titulo");
 let fechaEstrenoPel = document.querySelector("#fechadeEstreno");
@@ -55,7 +55,7 @@ buton.addEventListener(`click`, function (e){
         `;
         console.log(hola)
 
-        fetch(hola)
+        fetch(recomendaciones)
             .then(function (response){
                  return response.json()
             })
