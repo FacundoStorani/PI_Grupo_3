@@ -19,8 +19,8 @@
     
             <div class="buscador">
                 <form action="../Busqueda.html" method="get" target="_blank">
-                    <input type="text" name="q" placeholder="Buscar...">
-                    <input type="submit" value="Buscar" class="buscar">
+                    <input type="text" name="" placeholder="Buscar...">
+                    <input type="submit" value="Buscar" class="buscar" placeholder="Buscar...">
                 </form>
             </div>
     
@@ -35,24 +35,37 @@
     
     </header>
 
-    <section class="sectionbreaking">
+    <section class="sectionbreakingSer">
         <article class="articlebreaking">
-            <img class="fondodetalle" src="./Img/Braking Bad.webp" alt="foto walter">
+           <img id="imgPortadaSerie" class="fondodetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="${data.name}">
         </article>
-        <h1 class="h1breaking">Breaking Bad</h1>
-        <h3 class="h3breaking">Una de las mejores series del mundo esta esperando ser vista</h3>
-        <a class="Vertrailer" href="https://youtu.be/HhesaQXLuRY?feature=shared" target="_blank">Ver trailer</a>
+        <h1 id="h1TituloSer" class="h1"> </h1>
+        <h3 id="fechadeEstrenoSer" class="h3"></h3>
     </section>
+
     <section class="sectiondos">
-        <p class="Pbreaking">Valoracion: 3796 calificaciones</p>
-            <p class="Pbreaking">Duracion: 62 Capitulos </p>
-            <p class="Pbreaking">Generos: Drama Crimen </p>
-            <p class="Pbreaking">Un profesor de química con cáncer terminal se asocia con un exalumno suyo para fabricar y
-            vender
-            metanfetamina a fin de que su familia no pase apuros económicos. Ve todo lo que quieras. "Breaking Bad"
-            obtuvo 16 premios Emmy, incluyendo cuatro al mejor actor en una serie dramática para Bryan Cranston.</p>
-            <button class="favoritos">Añadir a favoritos </button>
+
+        <p id="calificacionSerie" class="parrafo1"> </p>
+        <p id="duracionSerie"     class="parrafo1"> </p>
+        <p id="sinopsisSerie"     class="parrafo1"> </p>
+        <p id="generoSerie"       class="parrafo1"> </p>
+  
     </section>
+
+    <section class="sectiondos sectRecomend">
+
+        <div class="Recomendados">
+            <button id="botonRecoSerie" type="buttom" class="favoritos">Recomendados</button>
+        </div>
+
+        <div id="contenedorSerie" style="display:none;">
+            <h2>Recomendaciones</h2> 
+        </div>
+
+        <div id="recomendacionSerie">
+        </div>
+    </section>
+
 
     <footer>
         <section class="sectionfooter">

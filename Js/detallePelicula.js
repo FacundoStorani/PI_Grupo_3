@@ -51,7 +51,8 @@ let recomendar = document.querySelector("#recomendacion");
 
 
 buton.addEventListener(`click`, function (e){
-        let hola = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}`;
+        let hola = `
+        `;
         console.log(hola)
 
         fetch(hola)
@@ -62,11 +63,15 @@ buton.addEventListener(`click`, function (e){
                 console.log(data);
                 contenedor.style.display = "block";
                 let info = "";
-                for (let index = 0; index < 5; index++) {
-                    info += `<a class = "" href = "./detallePelicula.html?id=${data.results[index].id}">
-                                <img id="imgPortadaPel" class="fondodetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="portada pelicula"
-                                <h3 id = "h3detallePel">${data.results[index].title}</h3>
-                                </a>`
+                for (let index = 0; index < 4; index++) {
+                    info += ` <a class = "aHome" href = "./detallePelicula.html?id=${data.results[index].id}">
+                                <article class = "ArtHome">
+                                   <img id="imgHome" class="imgHome
+                                   " src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="portada pelicula"
+                                   <p class = "pTopratedDO1">${data.results[index].title}</p>
+                                   <p class = "pTopratedDP2">${data.results[index].release_date}</p>
+                                </article>
+                              </a>`
                                
             }
             recomendar.innerHTML = info;

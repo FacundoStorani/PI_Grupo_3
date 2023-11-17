@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./Css/Style.css">
 </head>
 <body class="body">
@@ -12,7 +12,8 @@
 
         <div class=" header">
     
-            <img class="img_logo" src="./Img/Logo.2.png" alt="logo.header">
+            <a class="logo_header" href="./Home.html"><img class="img_logo" 
+                src="./Img/Logo.2.png" alt="logo.header"></a>
     
             <div class="buscador">
                 <form action="../Busqueda.html" method="get" target="_blank">
@@ -23,9 +24,9 @@
     
             <nav class="nav_lista">
                 <a href="./Home.html" class="activo">Home</a>
-                <a href="./Genero.html" target="_blank">Generos</a>
+                <a href="./Genero.html" >Generos</a>
                 <a href="./Busqueda.html">Películas</a>
-                <a href="./Favoritos.html" target="_blank">Favoritos</a>				
+                <a href="./Favoritos.html" >Favoritos</a>				
             </nav>
     
         </div>
@@ -34,14 +35,16 @@
 
     <section class="sectionbreaking">
         <article class="articlebreaking">
-           <img id="imgPortadaPel" class="fondodetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="${data.name}">
+           <img id="imgPortadaPel" class="fondodetalle" 
+            src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" 
+            alt="${data.name}">
         </article>
         <h1 id="h1Titulo" class="h1"> </h1>
-        <h3 id="fechadeEstreno" class="h3">Fecha de Estreno:</h3>
+        <h3 id="fechadeEstreno" class="h3"></h3>
     </section>
 
     <section class="sectiondos">
-        
+
         <p id="calificacionPel" class="parrafo1"> </p>
         <p id="duracionPel"     class="parrafo1"> </p>
         <p id="sinopsisPel"     class="parrafo1"> </p>
@@ -49,7 +52,7 @@
   
     </section>
 
-    <section class="sectiondos">
+    <section class="sectiondos sectRecomend">
 
         <div class="Recomendados">
             <button id="botonReco" type="buttom" class="favoritos">Recomendados</button>
@@ -60,6 +63,8 @@
         </div>
 
         <div id="recomendacion">
+            <p class = "pTopratedDO1"> </p>
+            <p class = "pTopratedDP2"> <p>
         </div>
     </section>
 
