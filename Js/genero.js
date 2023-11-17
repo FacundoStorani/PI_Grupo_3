@@ -20,7 +20,8 @@ fetch(movieData)
          ; index++) {
         contenido += `
             <article class="art_genero">
-                <a class="a3" href="./DetalleGenero.html?id=${data.genres[index].id}" target="_blank"><button class="buttona1">${data.genres[index].name}</button></a>
+                <a class="a3" href="./DetalleGenero.html?id=${data.genres[index].id}" ><button class="buttona1">
+                ${data.genres[index].name}</button></a>
             </article>`  
     }
 
@@ -49,7 +50,8 @@ fetch(SerPopular)
     for (let index = 0; index < 6 ; index++) {
         listaPopulares.innerHTML += `
                                     <article class="art_genero">
-                                        <a class="a3" href="./DetalleGenero.html?id=${data.genres[index].id}" target="_blank"><button class="buttona1">${data.genres[index].name}</button></a>
+                                        <a class="a3" href="./DetalleGenero.html?id=${data.genres[index].id}"><button class="buttona1">
+                                        ${data.genres[index].name}</button></a>
                                     </article>`   
     }
 
