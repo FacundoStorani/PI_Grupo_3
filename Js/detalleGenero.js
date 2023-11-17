@@ -1,3 +1,4 @@
+
 let API_KEY = "8b6eae301b66732ee0ec9cb7d499ade8"
 let qs                          = location.search;
 let qsObj                       = new URLSearchParams(qs);

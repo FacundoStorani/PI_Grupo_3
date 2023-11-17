@@ -53,7 +53,7 @@ fetch(serieTV)
     console.log(data.results);
     for (let index = 0; index < 5 ; index++) {
         listaSerieTV.innerHTML += `
-                                   <a class="aHome" href="./detalleSerie.html" >
+                                   <a class="aHome" href="./detalleSerie.html?id=${data.results[index].id}" >
                                        <article class="ArtHome"> 
                                            <img class="imgHome" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="Casino">
                                            <p class = "pToprated">${data.results[index].original_name}</p> 
