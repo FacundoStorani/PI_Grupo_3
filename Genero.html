@@ -12,20 +12,26 @@
 
 		<div class=" header">
 
-			<img class="img_logo" src="./Img/Logo.2.png" alt="logo.header">
+			<a class="logo_header" href="./Home.html"><img class="img_logo" src="./Img/Logo.2.png" alt="logo.header"></a>
 
 			<div class="buscador">
-				<form action="../Busqueda.html" method="get" target="_blank">
+
+				<form action="../Busqueda.html" method="get" >
+
 					<input type="text" name="q" placeholder="Buscar...">
 					<input type="submit" value="Buscar" class="buscar">
+
 				</form>
+
 			</div>
 
 			<nav class="nav_lista">
+
 				<a href="./Home.html" class="activo">Home</a>
-				<a href="./Genero.html" target="_blank">Generos</a>
-				<a href="./Busqueda.html">Películas</a>
-				<a href="./Favoritos.html" target="_blank">Favoritos</a>				
+				<a href="./Genero.html"             >Generos</a>
+				<a href="./Busqueda.html"           >Películas</a>
+				<a href="./Favoritos.html"          >Favoritos</a>	
+
 			</nav>
 
 		</div>
@@ -33,36 +39,46 @@
 	</header>
 
     <main class="maindegenero">
+
         <section class="sect1_Genero">
+
           <article class="fondogenero">
             <h1 class="generosh1">Generos:</h1>
           </article>
+
         </section>
     
         <section id="peli" class="botones_genero Pelicula">
             
             <h2 class="h2peliculasgenero">Peliculas</h2>
             
-    
         </section>
+
         <section id="series" class="botones_genero">
             <h2 class="h2peliculasgenero">Series</h2>
-
-           
-    
-        </section>
+         </section>
         
     </main>
+
     <footer>
+
         <section class="sectionfooter">
+
             <article class="articlefooter">
+
                 <p class="pfooter">Ayuda</p>
                 <p class="pfooter">Privacidad</p>
                 <p class="">Contacto</p>
-            </article>
-        </section>
-    </footer>
 
+            </article>
+            
+        </section>
+
+        <sectionclass="sectionfooter">
+			<img class="logoFooter" src="./Img/logoTMDB.png" alt="logoFooter">
+		</section>
+
+    </footer>
 
     <script src="./Js/genero.js"></script>
 </body>

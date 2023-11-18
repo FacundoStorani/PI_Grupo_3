@@ -18,17 +18,21 @@
             <a href="./Home.html"><img class="img_logo" src="./Img/Logo.2.png" alt="logo.header"></a>
     
             <div class="buscador">
-                <form action="../Busqueda.html" method="get" target="_blank">
+
+                <form action="../Busqueda.html" method="get" >
                     <input type="text" name="" placeholder="Buscar...">
                     <input type="submit" value="Buscar" class="buscar" placeholder="Buscar...">
                 </form>
+
             </div>
     
             <nav class="nav_lista">
+
                 <a href="./Home.html" class="activo">Home</a>
                 <a href="./Genero.html" >Generos</a>
                 <a href="./Busqueda.html">Películas</a>
-                <a href="./Favoritos.html" >Favoritos</a>				
+                <a href="./Favoritos.html" >Favoritos</a>	
+
             </nav>
     
         </div>
@@ -36,11 +40,15 @@
     </header>
 
     <section class="sectionbreakingSer">
+
         <article class="articlebreaking">
-           <img id="imgPortadaSerie" class="fondodetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="${data.name}">
+           <img id="imgPortadaSerie" class="fondodetalle" 
+                src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" 
+                alt="${data.resultsname}">
         </article>
         <h1 id="h1TituloSer" class="h1"> </h1>
         <h3 id="fechadeEstrenoSer" class="h3"></h3>
+
     </section>
 
     <section class="sectiondos">
@@ -63,20 +71,31 @@
         </div>
 
         <div id="recomendacionSerie">
+            <p class = "pTopratedDO1"> </p>
+            <p class = "pTopratedDP2"> </p>
         </div>
     </section>
 
 
     <footer>
+
         <section class="sectionfooter">
+
             <article class="articlefooter">
+
                 <p class="pfooter">Ayuda</p>
                 <p class="pfooter">Privacidad</p>
                 <p class="">Contacto</p>
+
             </article>
+            
         </section>
-    </footer>
-      
+
+        <sectionclass="sectionfooter">
+			<img class="logoFooter" src="./Img/logoTMDB.png" alt="logoFooter">
+		</section>
+
+    </footer>      
     
     <script src="./Js/detalleSerie.js"></script>
 </body>

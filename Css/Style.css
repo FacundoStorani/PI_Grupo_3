@@ -481,6 +481,17 @@ h3{
     flex-wrap: wrap;
     flex-direction: row;
 }
+.sectRecomend{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.pTopratedDO1{
+    color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 .pTopratedDP2{
     color: white;
 }
@@ -489,6 +500,14 @@ h3{
     display: flex;
     justify-content: center;
 }
+.ULT{
+    position: relative;
+    bottom: 15px;
+}
+#recomendacionSerie{
+    display: flex;
+}
+
 
 /* DetallesGenero */
 .p_detalle_G{
@@ -581,6 +600,8 @@ h3{
     .logo_header {
         position: relative;
         left: 120px;
+        display: flex;
+        align-self: center;
     }
 
 

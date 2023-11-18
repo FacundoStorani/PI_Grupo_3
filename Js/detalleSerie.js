@@ -1,9 +1,9 @@
-let API_KEY          =  "8b6eae301b66732ee0ec9cb7d499ade8"
-let as               = location.search;
-let obas             = new URLSearchParams(as);
-let id               = obas.get("id");
-let detalleSerie     = `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=${API_KEY}`
-let recomendaciones  =  `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=${API_KEY}`;
+let API_KEY              =  "8b6eae301b66732ee0ec9cb7d499ade8"
+let as                   = location.search;
+let obas                 = new URLSearchParams(as);
+let id                   = obas.get("id");
+let detalleSerie         = `https://api.themoviedb.org/3/tv/${id}?api_key=${API_KEY}`
+let recomendaciones      =  `https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=${API_KEY}`;
 let portadaSerie         = document.querySelector("#imgPortadaSerie");
 let tituloSerie          = document.querySelector("#h1TituloSer");
 let fechaEstrenoSerie    = document.querySelector("#fechadeEstrenoSer");
@@ -23,9 +23,9 @@ fetch(detalleSerie)
 })
 .then(function(data) {
     console.log(data);
-    let detalleSerie = "";
+    let detalleSeri = "";
     for (let index = 0; index < data.genres.length; index++) {
-        detalleSerie += `${data.genres[index].name}`
+        detalleSeri += `${data.genres[index].name}`
     }
 
     portadaSerie.src               = `https://image.tmdb.org/t/p/w500/${data.poster_path}`
@@ -34,7 +34,7 @@ fetch(detalleSerie)
     sinopsisSerie.innerText        = "Sinopsis: " + data.overview;     
     duracionSerie.innerText        = "Duracion:" + " " + data.runtime;
     calificacionSerie.innerText    = "Calificacion: " + data.vote_average
-    generosSerie.innerText         = "Generos: " + detallePelis;
+    generosSerie.innerText         = "Generos: " + detalleSeri;
 
     return data; 
 })
@@ -67,8 +67,10 @@ buton.addEventListener(`click`, function (e){
                     info += ` <a class = "aHome" href = "./detalleSerie.html?id=${data.results[index].id}">
                                 <article class = "ArtHome">
                                    <img id="imgHome" class="imgHome
-                                   " src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="portada pelicula"
-                                   <h3 class = "h3detallePel" id = "h3detallePel">${data.results[index].title}</h3>
+                                   " src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" 
+                                     alt="portada pelicula">
+                                     <p class = "pTopratedDO1">${data.results[index].name}</p>
+                                     <p class = "pTopratedDP2">${data.results[index].first_air_date}</p>
                                 </article>
                               </a>`
                                

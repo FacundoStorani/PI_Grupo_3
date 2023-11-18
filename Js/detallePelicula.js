@@ -3,14 +3,14 @@ let as               = location.search;
 let obas             = new URLSearchParams(as);
 let id               = obas.get("id");
 let detallePelicula  = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
-let recomendaciones  =  `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}`;
-let portadaPel      = document.querySelector("#imgPortadaPel");
-let tituloPel       = document.querySelector("#h1Titulo");
-let fechaEstrenoPel = document.querySelector("#fechadeEstreno");
-let sinopsisPel     = document.querySelector("#sinopsisPel");
-let duracion        = document.querySelector("#duracionPel");
-let calificacion    = document.querySelector("#calificacionPel"); 
-let generos         = document.querySelector("#generoPel");
+let recomendaciones  = `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}`;
+let portadaPel       = document.querySelector("#imgPortadaPel");
+let tituloPel        = document.querySelector("#h1Titulo");
+let fechaEstrenoPel  = document.querySelector("#fechadeEstreno");
+let sinopsisPel      = document.querySelector("#sinopsisPel");
+let duracion         = document.querySelector("#duracionPel");
+let calificacion     = document.querySelector("#calificacionPel"); 
+let generos          = document.querySelector("#generoPel");
 
 let peliculasDetalle = document.querySelector(".sectionbreaking");
 console.log(peliculasDetalle);
@@ -51,8 +51,7 @@ let recomendar = document.querySelector("#recomendacion");
 
 
 buton.addEventListener(`click`, function (e){
-        let hola = `
-        `;
+        let hola = "";
         console.log(hola)
 
         fetch(recomendaciones)
@@ -63,13 +62,13 @@ buton.addEventListener(`click`, function (e){
                 console.log(data);
                 contenedor.style.display = "block";
                 let info = "";
-                for (let index = 0; index < 4; index++) {
+                for (let index = 0; index < 4 ; index++) {
                     info += ` <a class = "aHome" href = "./detallePelicula.html?id=${data.results[index].id}">
                                 <article class = "ArtHome">
                                    <img id="imgHome" class="imgHome
-                                   " src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="portada pelicula"
-                                   <p class = "pTopratedDO1">${data.results[index].title}</p>
-                                   <p class = "pTopratedDP2">${data.results[index].release_date}</p>
+                                   " src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="portada pelicula">
+                                   <p class = "pTopratedDO1 ULT">${data.results[index].title}</p>
+                                   <p class = "pTopratedDP2 ULT">${data.results[index].release_date}</p>
                                 </article>
                               </a>`
                                

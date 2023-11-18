@@ -1,7 +1,7 @@
-let API_KEY = "8b6eae301b66732ee0ec9cb7d499ade8";
-let qs = location.search;
-let qsObj = new URLSearchParams(qs);
-let busqueda = qsObj.get("q");
+let API_KEY   = "8b6eae301b66732ee0ec9cb7d499ade8";
+let qs        = location.search;
+let qsObj     = new URLSearchParams(qs);
+let busqueda  = qsObj.get("q");
 let movieData = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${busqueda}`;
 
 /* Capturando elementos del DOM */
@@ -38,7 +38,6 @@ fetch(movieData)
             <a class="aHome" href="./detallePelicula.html?id=${pelicula.id}" > 
                 <article class="ArtHome"> 
                     <img class="imgHome" src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" alt="${pelicula.title}">
-                    <p>${pelicula.title}</p> 
                 </article>
             </a>`;
     }
